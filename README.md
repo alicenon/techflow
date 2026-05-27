@@ -28,7 +28,7 @@ Como alumna de SMR, tu entorno local estándar es **XAMPP**. Sigue estas instruc
 ### Paso 2: Ubicar los Archivos en `htdocs`
 1. Copia toda la carpeta del proyecto `SHANNON-TFG`.
 2. Pégala dentro de la raíz del servidor Apache de tu instalación local de XAMPP. La ruta por defecto en Windows es:  
-   📂 **`C:\xampp\htdocs\techflow\`**
+   📂 **`C:\xampp\htdocs\techflowsolution\`**
 
 ### Paso 3: Crear e Importar la Base de Datos
 1. Abre tu navegador web y entra en la consola de administración:  
@@ -36,12 +36,12 @@ Como alumna de SMR, tu entorno local estándar es **XAMPP**. Sigue estas instruc
 2. Haz clic en **"Nueva"** (en el menú de la izquierda) para crear una base de datos.
 3. Introduce el nombre exacto: **`techflow_db`** y haz clic en **"Crear"**.
 4. Selecciona la base de datos `techflow_db` recién creada y haz clic en la pestaña **"Importar"** en el menú superior.
-5. Haz clic en *"Seleccionar archivo"*, busca el archivo **`database.sql`** en la carpeta de tu proyecto (`C:\xampp\htdocs\techflow\database.sql`) y pulsa en **"Importar"** al final de la página.
+5. Haz clic en *"Seleccionar archivo"*, busca el archivo **`database.sql`** en la carpeta de tu proyecto (`C:\xampp\htdocs\techflowsolution\database.sql`) y pulsa en **"Importar"** al final de la página.
 6. En unos segundos, phpMyAdmin confirmará la importación del esquema relacional y las semillas de prueba.
 
 ### Paso 4: Cargar la Aplicación en el Navegador
 Abre una nueva pestaña en tu navegador web y escribe la siguiente dirección:  
-👉 **`http://localhost/techflow/index.php`**
+👉 **`http://localhost/techflowsolution/index.php`**
 
 ---
 
