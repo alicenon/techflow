@@ -1,13 +1,13 @@
 # PLATAFORMA WEB INTEGRADA DE GESTIÓN DE INCIDENCIAS Y PROYECTOS — TECHFLOW SOLUTIONS
-**DAW / SMR — Departamento de Informática y Comunicaciones (IFC)**
+**SMR — Departamento de Informática y Comunicaciones (IFC)**
 
 ---
 
 | | |
 |---|---|
 | **NOMBRE DEL PROYECTO** | TechFlow Solutions — Portal de Gestión Integrada IT & PMO |
-| **TÍTULO DEL PROYECTO** | Plataforma Web de Gestión de Tickets e Incidencias Técnicas con Módulo PMO |
-| **EMPRESA** | TechFlow Solutions (empresa ficticia) |
+| **TÍTULO DEL PROYECTO** | Plataforma Web de Gestión de Tickets e Incidencias con Módulo PMO |
+| **EMPRESA** | TechFlow Solutions |
 | **CICLO FORMATIVO** | Grado Medio en Sistemas Microinformáticos y Redes (SMR) |
 | **MODALIDAD** | FP Dual Intensiva |
 | **AUTORA** | Shannon |
@@ -58,330 +58,296 @@
 10. CONCLUSIONES
 11. FUENTES
 12. ANEXOS
-    - 12.1 Guía de estilo
+    - 12.1 Manual de usuario
 
 ---
 
 ## 1. INTRODUCCIÓN
 
-Este documento recoge el trabajo realizado para el **proyecto final** del Ciclo Formativo de Grado Medio en **Sistemas Microinformáticos y Redes (SMR)**, modalidad FP Dual Intensiva, en el Departamento de Informática y Comunicaciones (IFC).
+Este documento recoge el trabajo realizado para el **proyecto final** del Ciclo Formativo de Grado Medio en **Sistemas Microinformáticos y Redes (SMR)**, modalidad FP Dual Intensiva.
 
-Este módulo profesional complementa la formación establecida en el resto de módulos del título en las funciones de **análisis** del contexto, **diseño** del proyecto y organización de la **ejecución**.
+La alumna realizó su FP Dual en la empresa co-formadora **TechFlow Solutions**, donde comenzó en el departamento de **Soporte IT Nivel 1** y fue promocionada internamente a tareas de apoyo a la **PMO (Oficina de Gestión de Proyectos)**. Esta experiencia práctica directa en empresa motivó el desarrollo de una plataforma web que integra ambas funciones en un único sistema.
 
-La alumna realizó su FP Dual en la empresa co-formadora **TechFlow Solutions**, donde comenzó en el departamento de **Soporte IT Nivel 1** y fue promocionada internamente a tareas de apoyo a la **PMO (Oficina de Gestión de Proyectos)**. Esta experiencia práctica ha inspirado el desarrollo de una plataforma web empresarial que integra ambas funciones en un único sistema digital.
+A lo largo del período de prácticas, se observó la necesidad real de digitalizar los procesos de la empresa. Para afrontar el desarrollo, se realizaron búsquedas de documentación técnica, se consultaron recursos de aprendizaje en línea (tutoriales de PHP, MySQL y Bootstrap) y se fue construyendo la plataforma de forma progresiva, aplicando los conocimientos adquiridos en cada módulo del ciclo formativo.
 
 ---
 
 ## 2. ALCANCE DEL PROYECTO
 
-El propósito de este proyecto es **diseñar, desarrollar y desplegar una plataforma web corporativa** para la consultora tecnológica TechFlow Solutions, que permita unificar en un único entorno digital la gestión de proyectos PMO y el soporte técnico IT mediante un sistema de tickets de incidencias.
+El propósito de este proyecto es **diseñar, desarrollar y desplegar una plataforma web corporativa** para la consultora TechFlow Solutions, que permita unificar en un único entorno digital la gestión de proyectos PMO y el soporte técnico IT.
 
-El objetivo es claro y preciso: **crear una aplicación web funcional, segura y visualmente profesional** que permita a los clientes consultar el estado de sus proyectos y reportar incidencias, mientras el personal técnico y gestor puede supervisar, asignar y resolver dichas incidencias desde un cuadro de mando centralizado.
+El objetivo concreto es crear una aplicación web funcional, segura y de aspecto profesional que:
 
-El desarrollo de este proyecto se llevará a cabo en varias fases: estudio de viabilidad, análisis, diseño, implementación y pruebas, y explotación. A continuación, se detallan las actividades y tareas de cada una de estas fases.
+- Permita a los clientes consultar el estado de sus proyectos y reportar incidencias.
+- Permita al personal técnico y gestor supervisar, asignar y resolver dichas incidencias desde un cuadro de mando centralizado.
+
+El desarrollo se lleva a cabo en varias fases: estudio de viabilidad, análisis, diseño, implementación, pruebas y explotación.
 
 ---
 
 ## 3. ESTUDIO DE VIABILIDAD
 
-En esta fase se considera si el proyecto se puede realizar teniendo en cuenta las circunstancias internas y externas de la empresa, las diferentes soluciones posibles y los recursos disponibles. Para ello se hace una valoración del estado actual del sistema y de los requisitos del cliente, se presentan soluciones alternativas y la solución elegida.
+En esta fase se considera si el proyecto se puede realizar teniendo en cuenta las circunstancias de la empresa, las soluciones posibles y los recursos disponibles.
 
 ### 3.1 Estado actual del sistema
 
-El sistema actual de la empresa co-formadora TechFlow Solutions **no dispone de ninguna herramienta centralizada** para la gestión de incidencias ni para la supervisión de proyectos. La situación previa al desarrollo de este proyecto es la siguiente:
+El sistema actual de la empresa **no dispone de ninguna herramienta centralizada** para gestionar incidencias ni proyectos. La situación antes de este proyecto es:
 
-- La comunicación con los clientes sobre incidencias técnicas se realiza íntegramente por **correo electrónico**, generando hilos de conversación largos y difíciles de rastrear, sin posibilidad de priorizar por urgencia ni asignar un responsable claro.
-- El seguimiento del estado de los proyectos se actualiza manualmente en **hojas de cálculo Excel** compartidas, sin control de versiones ni visibilidad en tiempo real para el cliente.
-- No existe ningún **registro formal de apertura, asignación y cierre de incidencias**, lo que dificulta el análisis del rendimiento del equipo y la mejora continua de los procesos.
-- No hay distinción de roles ni control de accesos: cualquier miembro del equipo puede ver y modificar cualquier información, lo que supone un riesgo de seguridad.
+- La comunicación con los clientes sobre incidencias se realiza íntegramente por **correo electrónico**, sin posibilidad de priorizar ni asignar responsable.
+- El seguimiento de proyectos se actualiza manualmente en **hojas de cálculo Excel**, sin visibilidad en tiempo real para el cliente.
+- No existe registro formal de apertura, asignación ni cierre de incidencias.
+- No hay control de accesos: cualquier miembro del equipo puede ver y modificar cualquier dato.
 
-Como consecuencia, se producen incidencias sin resolver por falta de asignación clara, clientes descontentos al no conocer el estado real de sus proyectos, y ausencia de datos históricos para medir el rendimiento del equipo.
+Como consecuencia, hay incidencias sin resolver, clientes insatisfechos y ausencia de datos históricos para medir el rendimiento del equipo.
 
 ### 3.2 Requisitos del cliente
 
-El cliente (empresa co-formadora) ha trasladado los siguientes requisitos para el nuevo sistema:
+El cliente solicita para el nuevo sistema:
 
-- Acceso al portal desde cualquier navegador web sin necesidad de instalar software adicional.
-- Acceso diferenciado según el perfil del usuario: cliente, técnico de soporte y gestora PMO.
-- Visualización por parte del cliente del estado y porcentaje de avance de sus proyectos en tiempo real.
-- Posibilidad de que el cliente reporte incidencias técnicas indicando título, categoría y gravedad.
-- Gestión de incidencias por parte del personal: asignación de técnico responsable y cambio de estado.
-- Canal de comunicación directo entre cliente y técnico dentro de cada incidencia (chat de seguimiento).
-- Panel de indicadores estadísticos (KPIs) para el personal de gestión.
-- Interfaz web moderna, responsive y con imagen corporativa profesional.
-- Contraseñas almacenadas de forma segura (nunca en texto plano) en la base de datos.
-- Sistema que funcione sobre infraestructura local (servidor Apache + MySQL con XAMPP).
+- Acceso desde cualquier navegador web, sin instalar software adicional.
+- Acceso diferenciado por perfil: cliente, técnico de soporte y gestora PMO.
+- Visualización del estado y avance de los proyectos en tiempo real.
+- Posibilidad de reportar incidencias con título, categoría y nivel de gravedad.
+- Asignación de técnico responsable y seguimiento del estado de cada incidencia.
+- Canal de comunicación interno entre cliente y técnico por incidencia.
+- Panel de indicadores estadísticos para el equipo gestor.
+- Interfaz web moderna, responsive y con imagen profesional.
+- Contraseñas almacenadas de forma segura en la base de datos.
 
 ### 3.3 Posibles soluciones
 
-Existen otras herramientas en el mercado que ofrecen funcionalidades similares a las requeridas:
+Existen otras herramientas que ofrecen funcionalidades similares:
 
-- **Jira Service Management (Atlassian):** Solución corporativa líder que integra soporte técnico y gestión de proyectos. Sin embargo, el coste de las licencias es elevado para una PYME, su curva de aprendizaje es alta y requiere consultores especializados para su configuración.
-- **Zendesk / Freshdesk:** Plataformas de soporte en la nube con excelente gestión de tickets, pero sin módulo PMO nativo. Para conectar ambas funciones es necesario contratar integraciones de terceros que incrementan el coste.
-- **Trello / Asana / Monday:** Herramientas de planificación de proyectos ágiles y visuales, pero completamente desconectadas del canal de incidencias técnicas.
-- **WordPress + plugins de tickets:** Permite un despliegue rápido, pero los plugins disponibles no integran un módulo PMO real y la personalización del modelo de datos es limitada.
+- **Jira Service Management:** Solución corporativa líder que integra soporte y proyectos. Coste elevado para una PYME, curva de aprendizaje alta y dependencia de servidores externos.
+- **Zendesk / Freshdesk:** Excelente gestión de tickets, pero sin módulo PMO nativo. Para integrar ambas funciones requiere contratar servicios adicionales de pago.
+- **WordPress + plugins de tickets:** Despliegue rápido, pero los plugins no integran módulo PMO real y la personalización del modelo de datos es muy limitada. Se valoró esta opción inicialmente, pero se descartó porque no permitía adaptar la estructura de datos a las necesidades concretas de la empresa.
+- **Trello / Asana / Monday:** Herramientas visuales de planificación de proyectos, completamente desconectadas del canal de soporte técnico.
 
-Ninguna de las opciones anteriores ofrece de forma nativa, con bajo coste y fácil despliegue, la integración completa entre soporte IT y gestión de proyectos PMO que requiere TechFlow Solutions.
+Ninguna de estas opciones ofrece, de forma gratuita y con despliegue sencillo, la integración real entre soporte IT y PMO que requiere la empresa.
 
 ### 3.4 Solución elegida
 
-Se elige el **desarrollo web a medida** utilizando PHP procedimental, MySQL y Bootstrap 5 sobre un servidor Apache local (XAMPP). Esta solución se justifica por los siguientes motivos:
+Se elige el **desarrollo web a medida** con PHP, MySQL y Bootstrap 5 sobre servidor Apache local (XAMPP). Esta decisión se justifica por:
 
-- **Coste cero en licencias:** Todo el software utilizado es de código libre y gratuito.
-- **Control total del código:** La empresa es propietaria del código fuente, que puede modificarse sin restricciones ni dependencias de terceros.
-- **Integración real PMO + Soporte IT:** El modelo de datos relacional unifica en una única base de datos los proyectos y las incidencias, algo que las soluciones comerciales no ofrecen de forma nativa y gratuita.
-- **Alineación académica:** El desarrollo en PHP procedimental es coherente con el currículo del ciclo formativo SMR y completamente defendible ante el tribunal examinador.
-- **Despliegue sencillo:** Funciona sobre cualquier equipo con XAMPP instalado, sin necesidad de infraestructura adicional.
+- **Coste cero:** todo el software es gratuito y de código libre.
+- **Control total:** el código es propiedad de la empresa, sin dependencias externas.
+- **Integración real PMO + Soporte IT** en un único modelo de datos.
+- **Aprendizaje:** el desarrollo en PHP procedimental permitió a la alumna aplicar directamente los conocimientos del ciclo y profundizar en áreas nuevas (seguridad web, diseño responsive con Bootstrap frente a CSS puro). Se eligió Bootstrap porque facilita el diseño responsive de forma más rápida y estandarizada que escribir media queries personalizadas desde cero.
+- **Despliegue sencillo** sobre cualquier equipo con XAMPP.
 
-De esta solución nace el nuevo proyecto denominado **TechFlow Solutions — Portal de Gestión Integrada IT & PMO**.
+Nace así el nuevo proyecto denominado **TechFlow Solutions — Portal de Gestión Integrada IT & PMO**.
 
 ### 3.5 Planificación temporal de las tareas del proyecto [TechFlow Solutions]
 
-Se identifican las tareas del proyecto y se estima el tiempo necesario para llevarlas a cabo. El proyecto es desarrollado por **1 persona** (la alumna) en un plazo de **3 días de trabajo intensivo**.
+Se identifican las tareas del proyecto y se estima el tiempo necesario. El proyecto es desarrollado por **1 persona** en **3 días de trabajo intensivo**. Se utilizó un diagrama de Gantt para la planificación visual:
 
-**Diagrama de Gantt:**
+---
 
-```
-TAREAS DEL PROYECTO                       DÍA 1        DÍA 2        DÍA 3
-                                         [  8h  ]     [  8h  ]     [  8h  ]
+> 📷 **[Insertar aquí el diagrama de Gantt]**
+>
+> *Figura 1. Diagrama de Gantt del proyecto TechFlow Solutions. Se muestran las 3 fases principales (base de datos y estructura, desarrollo de módulos, pruebas y documentación) distribuidas en los 3 días de desarrollo.*
 
-Diseño del modelo E-R y la BD            [====]
-Script database.sql                      [====]
-conexion.php + header.php + footer.php        [==]
-index.php (página corporativa pública)            [==]
-login.php + logout.php                            [====]
-panel_cliente.php                                      [==]
-crear_ticket.php                                       [==]
-panel_pmo.php                                              [===]
-ver_ticket.php (chat de seguimiento)                       [====]
-Pruebas funcionales y corrección errores                        [====]
-Capturas de pantalla del sistema                                [==]
-Redacción de la memoria técnica                                     [====]
-Manual de usuario                                                   [===]
-Subida a GitHub                                                     [==]
-```
+---
 
 | Fase | Tarea principal | Día | Horas estimadas |
-|------|----------------|-----|-----------------|
-| Base de datos | Diseño E-R + `database.sql` + `conexion.php` | Día 1 | 5 h |
-| Estructura | `header.php` + `footer.php` | Día 1 | 3 h |
-| Autenticación | `index.php` + `login.php` + `logout.php` | Día 2 | 4 h |
-| Módulo cliente | `panel_cliente.php` + `crear_ticket.php` | Día 2 | 4 h |
-| Módulo personal | `panel_pmo.php` + `ver_ticket.php` | Día 2–3 | 5 h |
-| Pruebas | Pruebas funcionales + corrección | Día 3 | 3 h |
-| Documentación | Memoria + manual + GitHub | Día 3 | 7 h |
+|------|----------------|-----|:---------------:|
+| Base de datos | Diseño E-R + `database.sql` + `conexion.php` | 1 | 5 h |
+| Estructura | `header.php` + `footer.php` | 1 | 3 h |
+| Autenticación | `index.php` + `login.php` + `logout.php` | 2 | 4 h |
+| Módulo cliente | `panel_cliente.php` + `crear_ticket.php` | 2 | 4 h |
+| Módulo personal | `panel_pmo.php` + `ver_ticket.php` | 2–3 | 5 h |
+| Pruebas | Pruebas funcionales + corrección | 3 | 3 h |
+| Documentación | Memoria + manual + GitHub | 3 | 7 h |
+
+*Tabla 1. Desglose de tareas por fase, día y horas estimadas.*
 
 ### 3.6 Planificación de los recursos a utilizar
 
-Para solventar los problemas que plantea el proyecto **TechFlow Solutions**, se necesitan los siguientes recursos. Al tratarse de un proyecto académico con software libre, el coste económico es cero:
+Para solventar los problemas que plantea el proyecto TechFlow Solutions se utilizan los siguientes recursos:
 
 **Recursos humanos:**
 
 | Perfil | Rol | Dedicación |
-|--------|-----|------------|
+|--------|-----|:----------:|
 | Alumna (Shannon) | Desarrolladora web y documentadora | 100% (3 días) |
 | Tutora del centro | Supervisión académica | Puntual |
-| Tutora de empresa (PMO) | Validación de requisitos | Puntual |
+| Tutora de empresa | Validación de requisitos | Puntual |
+
+*Tabla 2. Recursos humanos del proyecto.*
 
 **Recursos de hardware y software:**
 
 | Recurso | Detalle |
 |---------|---------|
-| Equipo de desarrollo | PC con Intel Core i5 / 8 GB RAM / SSD |
-| Sistema operativo | Windows 10/11 (64 bits) |
+| Equipo de desarrollo | PC Windows 11, Intel Core i5, 8 GB RAM, SSD |
 | Servidor local | XAMPP 8.2 (Apache + MariaDB + PHP) |
 | Editor de código | Visual Studio Code |
 | Navegador de pruebas | Google Chrome con DevTools |
 | Control de versiones | Git + repositorio GitHub |
 | Framework CSS | Bootstrap 5.3 (CDN, gratuito) |
 
-**Coste económico total del proyecto: 0 €** (todo el software es de código abierto o gratuito).
+*Tabla 3. Recursos de hardware y software utilizados.*
+
+**Coste económico total del proyecto: 0 €** (todo el software es libre o gratuito).
 
 ---
 
 ## 4. ANÁLISIS
 
-En esta fase se establecen los requisitos del sistema. Una vez que el cliente ha aceptado el nuevo proyecto, hay que dejar muy claro y por escrito cuáles son los requisitos que debe cumplir el sistema. Se puede distinguir entre los requisitos funcionales y no funcionales.
+En esta fase se establecen los requisitos del sistema. Una vez que el cliente acepta el nuevo proyecto, hay que dejar claro y por escrito qué requisitos debe cumplir el sistema.
 
 ### 4.1 Requisitos funcionales
 
-Son aquellos que determinan qué tareas tiene que hacer el sistema:
+Son los que determinan qué tareas tiene que hacer el sistema:
 
-**Perfil: Cliente**
-- El sistema debe permitir al cliente iniciar sesión y acceder a su panel privado personalizado.
-- El sistema debe mostrar al cliente los proyectos contratados con nombre, descripción, estado actual y porcentaje de progreso en tiempo real.
-- El sistema debe mostrar al cliente su historial de tickets de soporte con su estado actualizado.
-- El sistema debe permitir al cliente crear nuevas incidencias indicando título, categoría (Soporte Técnico / Gestión de Proyectos / Infraestructura), gravedad (Baja / Media / Alta / Crítica) y descripción detallada.
-- El sistema debe permitir al cliente consultar el chat de seguimiento de cada una de sus incidencias y añadir nuevas respuestas.
-- El sistema NO debe permitir al cliente acceder a datos o tickets de otros clientes.
+**Perfil cliente:**
+- Iniciar sesión y acceder a un panel privado personalizado.
+- Visualizar los proyectos contratados con nombre, estado y porcentaje de progreso.
+- Consultar el historial de tickets de soporte.
+- Crear nuevas incidencias con título, categoría, gravedad y descripción.
+- Acceder al chat de seguimiento de cada incidencia.
+- No poder ver datos ni tickets de otros clientes.
 
-**Perfil: Técnico / PMO**
-- El sistema debe ofrecer al personal un cuadro de mando con indicadores KPI en tiempo real: total de incidencias, incidencias activas, casos resueltos y proyectos activos.
-- El sistema debe mostrar al personal una tabla global con todas las incidencias de todos los clientes.
-- El sistema debe permitir al personal asignar un técnico responsable a cada incidencia.
-- El sistema debe permitir al personal cambiar el estado de un ticket: Abierto → En Proceso → Resuelto → Cerrado.
-- El sistema debe permitir al personal responder al cliente en el chat de seguimiento de cada ticket.
-- El sistema debe mostrar al personal la cartera completa de proyectos activos de la consultora.
+**Perfil técnico / PMO:**
+- Acceder a un cuadro de mando con KPIs en tiempo real (total de incidencias, activas, resueltas, proyectos activos).
+- Ver una tabla global con todas las incidencias del sistema.
+- Asignar técnico responsable a cada incidencia.
+- Cambiar el estado de un ticket: Abierto → En Proceso → Resuelto → Cerrado.
+- Responder al cliente en el chat de seguimiento.
+- Consultar la cartera de proyectos activos.
 
-**Perfil: Visitante público**
-- El sistema debe mostrar una página corporativa pública con información de los servicios de la consultora.
-- El sistema debe ofrecer un formulario de contacto con validación de campos.
+**Área pública:**
+- Mostrar una página corporativa con servicios y formulario de contacto.
 
 ### 4.2 Requisitos no funcionales
 
 Son propiedades o cualidades que el sistema debe cumplir:
 
-- **Diseño atractivo y profesional:** La interfaz debe proyectar una imagen corporativa seria y moderna, coherente con una consultora tecnológica real.
-- **Diseño responsive:** La web debe adaptarse correctamente a distintos tamaños de pantalla: escritorio, tableta y móvil, sin errores de maquetación.
-- **Seguridad en contraseñas:** Las contraseñas deben almacenarse cifradas en la base de datos mediante el algoritmo Bcrypt. Nunca en texto plano.
-- **Control de accesos por sesión:** El acceso directo a páginas privadas sin sesión activa debe redirigir automáticamente al login.
-- **Integridad de datos:** Los accesos entre recursos de distintos usuarios deben estar protegidos para evitar accesos cruzados no autorizados.
-- **Tiempo de respuesta:** Las páginas deben cargar en menos de 2 segundos en el entorno local con XAMPP.
-- **Codificación de caracteres:** El sistema debe soportar correctamente caracteres del español (tildes, eñes) mediante UTF-8 en todos los niveles (PHP, HTML y MySQL).
-
-Tienen que quedar claras además las restricciones del nuevo sistema: no contempla despliegue en servidor público, notificaciones por email ni app móvil en su versión actual (siempre será mejorable).
+- **Diseño atractivo y responsive:** adaptación a escritorio, tableta y móvil sin errores de maquetación.
+- **Seguridad en contraseñas:** almacenamiento mediante hash Bcrypt, nunca en texto plano.
+- **Control de sesiones:** el acceso a páginas privadas sin sesión activa redirige automáticamente al login.
+- **Protección de datos entre usuarios:** un cliente no puede ver recursos de otro cliente.
+- **Tiempo de respuesta:** carga de páginas inferior a 2 segundos en entorno local.
+- **Codificación UTF-8:** soporte correcto de tildes y caracteres del español en todos los niveles.
 
 ---
 
 ## 5. DISEÑO
 
-En esta fase se realiza una aproximación al diseño tecnológico de la solución. Se describe **cómo** desarrollar cada uno de los requisitos establecidos en la fase anterior, apoyándose en la estructura de la aplicación, la arquitectura de la red y los componentes del sistema.
+En esta fase se realiza una aproximación al diseño tecnológico de la solución. Se describe cómo desarrollar los requisitos establecidos, apoyándose en la estructura de la aplicación, la arquitectura de la red y los componentes del sistema.
 
 ### 5.1 Estructura de la aplicación
 
-Se trata del desarrollo de una **aplicación web** en PHP procedimental. El árbol de archivos de la aplicación es el siguiente:
+Se trata del desarrollo de una aplicación web en PHP procedimental. El árbol de archivos es el siguiente:
 
 ```
-techflowsolution/                  ← Directorio raíz en htdocs de Apache
-│
-├── conexion.php                   ← Conector procedimental MySQLi
-├── header.php                     ← Cabecera HTML dinámica (nav por roles)
-├── footer.php                     ← Pie de página corporativo común
-│
-├── index.php                      ← Página corporativa pública
-├── login.php                      ← Autenticación + gestión de sesiones
-├── logout.php                     ← Destrucción segura de sesión
-│
-├── panel_cliente.php              ← Panel privado del cliente
-├── crear_ticket.php               ← Formulario de alta de incidencia
-├── panel_pmo.php                  ← Cuadro de mando del personal
-├── ver_ticket.php                 ← Ficha del ticket + chat
-│
-├── database.sql                   ← Script SQL de creación de la BD
-│
-└── imagenes-tfg/
-    ├── inicio_corporativo.png
-    ├── portal_login.png
-    ├── panel_cliente.png
-    └── cuadro_mando_pmo.png
+techflowsolution/
+├── conexion.php          ← Conector MySQLi a la base de datos
+├── header.php            ← Cabecera HTML dinámica (menú según rol)
+├── footer.php            ← Pie de página corporativo común
+├── index.php             ← Página corporativa pública
+├── login.php             ← Autenticación y gestión de sesiones
+├── logout.php            ← Cierre de sesión seguro
+├── panel_cliente.php     ← Panel privado del cliente
+├── crear_ticket.php      ← Formulario de nueva incidencia
+├── panel_pmo.php         ← Cuadro de mando del personal
+├── ver_ticket.php        ← Ficha del ticket y chat de seguimiento
+├── database.sql          ← Script SQL de creación de la BD
+└── imagenes-tfg/         ← Capturas del sistema para la documentación
 ```
 
-**Flujo de navegación de la aplicación:**
+*Tabla 4. Árbol de archivos del proyecto TechFlow Solutions.*
 
-```
-  [VISITANTE]  →  index.php  →  login.php
-                                    │
-                    ┌───────────────┴────────────────┐
-                    │ rol = cliente                  │ rol = tecnico / pmo
-                    ▼                                ▼
-           panel_cliente.php               panel_pmo.php
-                    │                                │
-           crear_ticket.php                ver_ticket.php
-           ver_ticket.php              (asignar + cambiar estado)
-                    │                                │
-                    └───────────┬────────────────────┘
-                                ▼
-                           logout.php
-```
+**Flujo de navegación:**
+
+---
+
+> 📷 **[Insertar aquí el diagrama de flujo de navegación]**
+>
+> *Figura 2. Flujo de navegación de la aplicación. El visitante accede a la página pública y puede iniciar sesión. Según su rol, se redirige al panel del cliente o al cuadro de mando del personal.*
+
+---
 
 ### 5.2 Componentes del sistema
 
-**Base de datos (`techflow_db`):** 4 tablas relacionales con motor InnoDB que garantizan la integridad referencial mediante claves foráneas.
+**Base de datos (`techflow_db`):** 4 tablas relacionales con motor InnoDB.
 
 | Tabla | Función |
 |-------|---------|
-| `usuarios` | Clientes, técnicos y gestoras con su rol y contraseña Bcrypt |
+| `usuarios` | Almacena clientes, técnicos y gestoras con su rol y contraseña cifrada |
 | `proyectos` | Proyectos contratados por cada cliente con estado PMO y progreso |
 | `tickets` | Incidencias de soporte con su ciclo de vida completo |
 | `comentarios_tickets` | Mensajes del chat de seguimiento de cada ticket |
 
-**Modelo Entidad-Relación:**
+*Tabla 5. Tablas de la base de datos techflow_db.*
 
-![Figura 1 - Modelo E-R de la base de datos techflow_db](modelo_er.png)
+**Diagrama de la base de datos:**
 
-*Figura 1. Diagrama del modelo entidad-relación de techflow_db. Se representan las 4 tablas con sus claves primarias (PK), claves foráneas (FK) y las relaciones uno a muchos (1:N) entre ellas.*
+---
 
-**Relaciones:**
-- `usuarios → proyectos` (1:N): un cliente puede tener varios proyectos contratados.
-- `usuarios → tickets` (1:N × 2): un cliente puede abrir varios tickets; un técnico puede tener varios tickets asignados.
-- `tickets → comentarios_tickets` (1:N): un ticket puede contener múltiples comentarios en el chat.
+![Figura 3 - Diagrama de tablas de la BD techflow_db en phpMyAdmin](imagenes-tfg/diagrama_bd_phpmyadmin.png)
 
-**Servidor web:** Apache (XAMPP), que interpreta los scripts PHP y sirve el HTML generado al navegador del cliente.
+*Figura 3. Diagrama de relaciones de la base de datos techflow_db generado con phpMyAdmin. Se observan las 4 tablas InnoDB con sus claves primarias (PK), campos y las relaciones entre ellas: usuarios → proyectos (1:N), usuarios → tickets (1:N × 2) y tickets → comentarios_tickets (1:N).*
 
-**Interfaz de usuario:** HTML5 + Bootstrap 5 (framework CSS), con iconografía de Bootstrap Icons. Diseño responsive con paleta de colores corporativa azul oscuro (#0A192F) y acento azul brillante (#00B4D8).
+---
+
+**Servidor web:** Apache (XAMPP), que interpreta los scripts PHP y sirve el HTML al navegador del cliente.
+
+**Interfaz de usuario:** HTML5 + Bootstrap 5 con iconografía de Bootstrap Icons. Se eligió Bootstrap frente a CSS puro porque proporciona un sistema de rejilla responsive ya probado, con componentes reutilizables (tarjetas, tablas, formularios) que reducen significativamente el tiempo de desarrollo.
 
 ### 5.3 Arquitectura de la red
 
 El sistema se implementa sobre una arquitectura **cliente-servidor de tres capas** en red local:
 
-```
-┌──────────────────────────────────────────────────────┐
-│           CAPA 1: PRESENTACIÓN                        │
-│   Navegador web del usuario (Chrome / Edge)           │
-│   HTML5 + CSS Bootstrap 5 + JavaScript                │
-└──────────────────────┬───────────────────────────────┘
-                        │  HTTP  (Puerto 80 / TCP)
-┌──────────────────────▼───────────────────────────────┐
-│           CAPA 2: LÓGICA DE NEGOCIO                   │
-│   Servidor Apache + Intérprete PHP 8.2 (XAMPP)        │
-│   Gestión de sesiones: $_SESSION                      │
-└──────────────────────┬───────────────────────────────┘
-                        │  MySQL  (Puerto 3306 / TCP)
-┌──────────────────────▼───────────────────────────────┐
-│           CAPA 3: DATOS                               │
-│   Motor MariaDB/MySQL — Base de datos: techflow_db    │
-└──────────────────────────────────────────────────────┘
+---
 
-URL de acceso local: http://localhost/techflowsolution/
-```
+> 📷 **[Insertar aquí el diagrama de arquitectura de red]**
+>
+> *Figura 4. Arquitectura cliente-servidor de tres capas del sistema TechFlow Solutions. Capa 1: navegador web (HTML + Bootstrap). Capa 2: servidor Apache + PHP 8.2 con gestión de sesiones. Capa 3: motor MariaDB con la base de datos techflow_db. Comunicación HTTP en el puerto 80 y MySQL en el puerto 3306.*
+
+---
+
+URL de acceso local: `http://localhost/techflowsolution/`
 
 ### 5.4 Herramientas
 
 | Herramienta | Uso en el proyecto |
 |-------------|-------------------|
-| **XAMPP 8.2** | Servidor integrado local (Apache + MariaDB + PHP) |
-| **Visual Studio Code** | Editor de código con extensiones PHP e IntelliSense |
-| **phpMyAdmin** | Administración gráfica de la BD y validación de scripts SQL |
-| **Bootstrap 5.3** (CDN) | Framework CSS para maquetación responsive y componentes UI |
-| **Bootstrap Icons** (CDN) | Iconografía vectorial sin imágenes pesadas |
-| **Git + GitHub** | Control de versiones y repositorio del proyecto |
-| **Google Chrome DevTools** | Depuración CSS/DOM y pruebas de diseño responsive |
+| **XAMPP 8.2** | Servidor integrado (Apache + MariaDB + PHP) |
+| **Visual Studio Code** | Editor de código principal |
+| **phpMyAdmin** | Administración visual de la BD |
+| **Bootstrap 5.3** | Framework CSS responsive (CDN) |
+| **Bootstrap Icons** | Iconografía vectorial |
+| **Git + GitHub** | Control de versiones y repositorio |
+| **Google Chrome DevTools** | Depuración y pruebas responsive |
+
+*Tabla 6. Herramientas utilizadas en el desarrollo.*
 
 ---
 
 ## 6. IMPLEMENTACIÓN
 
-Partiendo del diseño, en esta fase se construye el sistema. Se ha llevado a cabo la implementación de la página web en PHP procedimental, la creación de las tablas de la base de datos, la carga de datos iniciales de prueba y la configuración del entorno de servidor XAMPP.
+Partiendo del diseño, en esta fase se construye el sistema. Se implementa la aplicación web en PHP procedimental, se crean las tablas de la BD, se cargan los datos iniciales y se configura el entorno de servidor.
 
 ### 6.1 Entorno de implementación
 
-El entorno de implementación utilizado es un **servidor local Apache con XAMPP 8.2** sobre Windows 11. Los archivos del proyecto se encuentran en:
+El entorno utilizado es un **servidor local Apache con XAMPP 8.2** sobre Windows 11. Los archivos del proyecto se encuentran en:
 
 ```
 C:\xampp\htdocs\techflowsolution\
 ```
 
-La URL de acceso durante el desarrollo y las pruebas ha sido:
+URL de acceso durante el desarrollo:
 
 ```
 http://localhost/techflowsolution/index.php
 ```
 
-El editor de código utilizado ha sido **Visual Studio Code**. El control de versiones se ha gestionado con **Git**, con repositorio remoto en GitHub: `https://github.com/alicenon/techflow`
+El editor de código utilizado es **Visual Studio Code**. El control de versiones se gestiona con **Git**, con repositorio remoto en GitHub: `https://github.com/alicenon/techflow`
 
 ### 6.2 Tablas creadas
 
-Se han creado **4 tablas relacionales** en la base de datos `techflow_db` mediante el script `database.sql`:
+Se crean **4 tablas relacionales** en la base de datos `techflow_db` mediante el script `database.sql`:
 
 **Tabla `usuarios`:**
 
@@ -393,6 +359,8 @@ Se han creado **4 tablas relacionales** en la base de datos `techflow_db` median
 | `password` | VARCHAR(255) | Hash Bcrypt de la contraseña |
 | `rol` | ENUM('cliente','tecnico','pmo') | Nivel de permisos |
 | `created_at` | TIMESTAMP | Fecha de registro |
+
+*Tabla 7. Estructura de la tabla usuarios.*
 
 **Tabla `proyectos`:**
 
@@ -407,6 +375,8 @@ Se han creado **4 tablas relacionales** en la base de datos `techflow_db` median
 | `fecha_inicio` | DATE | Inicio planificado |
 | `fecha_fin` | DATE | Entrega estimada |
 
+*Tabla 8. Estructura de la tabla proyectos.*
+
 **Tabla `tickets`:**
 
 | Campo | Tipo | Descripción |
@@ -417,10 +387,12 @@ Se han creado **4 tablas relacionales** en la base de datos `techflow_db` median
 | `cliente_id` | INT (FK → usuarios) | Cliente que abre el ticket |
 | `tecnico_id` | INT (FK → usuarios, NULL) | Técnico asignado |
 | `categoria` | ENUM('Soporte Tecnico','Gestion de Proyectos','Infraestructura') | Categoría |
-| `gravedad` | ENUM('Baja','Media','Alta','Critica') | Urgencia/impacto |
+| `gravedad` | ENUM('Baja','Media','Alta','Critica') | Urgencia |
 | `estado` | ENUM('Abierto','En Proceso','Resuelto','Cerrado') | Ciclo de vida |
 | `created_at` | TIMESTAMP | Fecha de apertura |
 | `updated_at` | TIMESTAMP | Última modificación |
+
+*Tabla 9. Estructura de la tabla tickets.*
 
 **Tabla `comentarios_tickets`:**
 
@@ -432,84 +404,72 @@ Se han creado **4 tablas relacionales** en la base de datos `techflow_db` median
 | `comentario` | TEXT | Contenido del mensaje |
 | `created_at` | TIMESTAMP | Fecha y hora del mensaje |
 
+*Tabla 10. Estructura de la tabla comentarios_tickets.*
+
 ### 6.3 Carga de datos
 
-Se han insertado los siguientes **registros semilla** en la base de datos para poder realizar las pruebas sin necesidad de crear datos manualmente:
+Se insertan los siguientes **registros de prueba** en la base de datos para validar el sistema sin necesidad de crear datos manualmente:
 
-**Usuarios:**
+**Usuarios de prueba:**
 
-| Rol | Nombre | Email | Contraseña (hash Bcrypt en BD) |
-|-----|--------|-------|-------------------------------|
-| cliente | Juan Gómez | cliente@techflow.com | hash de `password123` |
-| tecnico | Carlos Técnico | tecnico@techflow.com | hash de `password123` |
-| pmo | Sofía PMO (Gestora) | pmo@techflow.com | hash de `password123` |
+| Rol | Nombre | Email | Contraseña |
+|-----|--------|-------|------------|
+| cliente | Juan Gómez | cliente@techflow.com | password123 |
+| tecnico | Carlos Técnico | tecnico@techflow.com | password123 |
+| pmo | Sofía PMO | pmo@techflow.com | password123 |
 
-**Proyectos:**
+*Tabla 11. Usuarios de prueba cargados en la BD. Las contraseñas se almacenan como hash Bcrypt, nunca en texto plano.*
+
+**Proyectos de prueba:**
 
 | Nombre | Cliente | Estado | Progreso |
-|--------|---------|--------|----------|
+|--------|---------|--------|:--------:|
 | Migración de Servidores Cloud (AWS) | Juan Gómez | En Desarrollo | 65% |
 | Implantación ERP Corporativo | Juan Gómez | Planificacion | 10% |
 
-**Tickets de prueba:**
-
-| ID | Título (resumido) | Estado | Técnico |
-|----|-------------------|--------|---------|
-| #1 | Error de acceso al servidor | En Proceso | Carlos Técnico |
-| #2 | Revisión de avance del proyecto | Abierto | Sin asignar |
-| #3 | No conecta la VPN desde preproducción | Resuelto | Carlos Técnico |
+*Tabla 12. Proyectos de prueba cargados en la BD.*
 
 ### 6.4 Ficheros de configuración actualizados
 
-El único fichero de configuración que debe actualizarse según el entorno de destino es **`conexion.php`**, que contiene los parámetros de conexión a la base de datos:
+El único fichero que hay que actualizar según el entorno de destino es **`conexion.php`**, con los parámetros de conexión a la base de datos:
 
 ```php
 <?php
-// Parámetros de conexión — modificar según el entorno
 $servidor   = "localhost";    // Dirección del servidor MySQL
-$usuario    = "root";         // Usuario de MySQL (root en XAMPP por defecto)
-$contrasena = "";             // Contraseña (vacía en XAMPP local por defecto)
-$base_datos = "techflow_db";  // Nombre de la base de datos del proyecto
+$usuario    = "root";         // Usuario de MySQL (vacío en XAMPP por defecto)
+$contrasena = "";             // Contraseña (vacía en instalación estándar XAMPP)
+$base_datos = "techflow_db";  // Nombre de la base de datos
 
 $conexion = mysqli_connect($servidor, $usuario, $contrasena, $base_datos);
-
-if (!$conexion) {
-    die("Error crítico: No se pudo conectar. " . mysqli_connect_error());
-}
-
-mysqli_set_charset($conexion, "utf8mb4"); // UTF-8 para caracteres del español
+mysqli_set_charset($conexion, "utf8mb4"); // Soporte de caracteres en español
 ?>
 ```
 
-En caso de conflicto de puertos en Apache, se debe modificar también el fichero `httpd.conf` de XAMPP, cambiando la línea `Listen 80` por `Listen 8080`.
+*Figura 5. Fragmento del fichero conexion.php. Único punto de configuración de la conexión a la BD.*
 
 ### 6.5 Configuraciones realizadas en el sistema
 
-A continuación se muestran las imágenes que demuestran que el sistema ha sido correctamente configurado y desplegado:
+A continuación se muestran capturas que demuestran que el sistema ha sido correctamente configurado y desplegado en el servidor local:
 
-**Figura 2: Página Corporativa (index.php) — Sistema desplegado en servidor Apache local**
+---
 
-![Figura 2 - Página corporativa pública desplegada](imagenes-tfg/inicio_corporativo.png)
+> 📷 **[Insertar aquí captura de la página principal — index.php]**
+>
+> *Figura 6. Página corporativa pública (index.php) accedida desde el navegador a través del servidor Apache local. La URL `localhost/techflowsolution/index.php` confirma que Apache sirve correctamente los archivos PHP del proyecto.*
 
-*Figura 2. Captura de la página corporativa pública (index.php) accedida a través del servidor Apache local. La barra de direcciones muestra `localhost/techflowsolution/index.php`, confirmando que Apache está activo y sirviendo correctamente los archivos PHP del proyecto.*
+---
 
-**Figura 3: Portal de Autenticación (login.php) — Gestión de sesiones PHP activa**
+> 📷 **[Insertar aquí captura del panel del cliente — panel_cliente.php]**
+>
+> *Figura 7. Panel privado del cliente. Se visualizan los proyectos y tickets recuperados en tiempo real desde la base de datos MySQL. Confirma que la conexión MySQLi a techflow_db funciona correctamente.*
 
-![Figura 3 - Portal de login con sesión activa](imagenes-tfg/portal_login.png)
+---
 
-*Figura 3. Formulario de login del portal corporativo. La barra de navegación superior muestra "Sofía PMO (Gestora) — PMO", confirmando que el sistema de sesiones PHP (`$_SESSION`) está correctamente configurado y que la diferenciación de roles funciona.*
+> 📷 **[Insertar aquí captura del cuadro de mando — panel_pmo.php]**
+>
+> *Figura 8. Cuadro de mando del personal PMO con sesión activa de "Sofía PMO (Gestora)". Los 4 indicadores KPI se calculan mediante consultas SQL en tiempo real y la tabla global muestra todos los tickets del sistema.*
 
-**Figura 4: Panel del Cliente (panel_cliente.php) — BD conectada y datos en tiempo real**
-
-![Figura 4 - Panel del cliente con proyectos y tickets](imagenes-tfg/panel_cliente.png)
-
-*Figura 4. Panel privado del cliente. Se muestran los tickets de soporte recuperados de la tabla `tickets` de MySQL y las barras de progreso de los proyectos leídas de la tabla `proyectos`. Confirma que la conexión MySQLi a la BD techflow_db es correcta.*
-
-**Figura 5: Cuadro de Mando PMO (panel_pmo.php) — KPIs estadísticos en tiempo real**
-
-![Figura 5 - Cuadro de mando con KPIs y tabla de tickets](imagenes-tfg/cuadro_mando_pmo.png)
-
-*Figura 5. Cuadro de mando del personal con sesión iniciada como "Sofía PMO (Gestora)". La cabecera muestra los 4 KPIs calculados en tiempo real mediante consultas SQL: 3 incidencias totales, 2 activas, 1 resuelta y 2 proyectos activos. La tabla global lista los 3 tickets con su estado, técnico asignado y botón de gestión.*
+---
 
 ### 6.6 Implementaciones de código realizadas
 
@@ -517,297 +477,280 @@ El código fuente completo y comentado se entrega en formato electrónico en el 
 
 A continuación se comentan los aspectos más significativos de la implementación:
 
-**Autenticación segura con Bcrypt (`login.php`):**
-El aspecto más importante de la seguridad del sistema. Las contraseñas se validan con `password_verify()` comparando el texto plano introducido con el hash Bcrypt almacenado en la BD, garantizando que aunque alguien accediera a la base de datos, nunca podría recuperar las contraseñas originales.
+**Sistema de autenticación segura — `login.php`:**
 
-```php
-// Verificación del hash Bcrypt — el punto más crítico de la seguridad
-if (password_verify($password, $usuario['password'])) {
-    $_SESSION['usuario_id'] = $usuario['id'];
-    $_SESSION['rol']        = $usuario['rol'];
-    header("Location: " . ($usuario['rol'] === 'cliente'
-        ? "panel_cliente.php" : "panel_pmo.php"));
-    exit;
-}
+La seguridad de las contraseñas es uno de los aspectos más críticos del sistema. Las contraseñas nunca se almacenan en texto plano. En su lugar, se utiliza el algoritmo **Bcrypt**, que transforma la contraseña en un hash unidireccional. Incluso si alguien accediera a la base de datos, no podría recuperar la contraseña original.
+
+El proceso de autenticación sigue el siguiente esquema:
+
+```
+Usuario introduce contraseña
+         │
+         ▼
+  password_verify()
+  compara el texto con el hash Bcrypt almacenado en BD
+         │
+    ┌────┴─────┐
+  Correcto   Incorrecto
+    │              │
+  $_SESSION    Mensaje
+  creada        de error
+    │
+  Redirección al panel según rol
 ```
 
-**Protección IDOR en `ver_ticket.php`:**
-Antes de mostrar los datos de un ticket, el sistema verifica que el `cliente_id` del ticket coincide con el `$_SESSION['usuario_id']` activo. Esto impide que un cliente acceda a los tickets de otro usuario manipulando el parámetro `id` de la URL.
+*Figura 9. Esquema simplificado del proceso de autenticación con hash Bcrypt en login.php.*
+
+El sistema no permite acceder a ninguna página privada sin sesión activa. Si se intenta acceder directamente a una URL privada, se redirige automáticamente al formulario de login.
+
+**KPIs estadísticos en tiempo real — `panel_pmo.php`:**
+
+El cuadro de mando calcula los indicadores clave mediante consultas SQL `COUNT(*)` en cada carga de página, garantizando datos siempre actualizados:
 
 ```php
-$ticket_id = (int)$_GET['id']; // Forzado a entero para evitar inyecciones
-if ($_SESSION['rol'] === 'cliente') {
-    $check = mysqli_query($conexion,
-        "SELECT id FROM tickets WHERE id=$ticket_id
-         AND cliente_id={$_SESSION['usuario_id']} LIMIT 1");
-    if (!$check || mysqli_num_rows($check) === 0) {
-        header("Location: panel_cliente.php"); exit;
-    }
-}
+// Total de incidencias en el sistema
+$total = mysqli_fetch_assoc(
+    mysqli_query($conexion, "SELECT COUNT(*) AS n FROM tickets")
+)['n'];
+
+// Incidencias activas (pendientes de resolver)
+$activas = mysqli_fetch_assoc(
+    mysqli_query($conexion,
+        "SELECT COUNT(*) AS n FROM tickets
+         WHERE estado IN ('Abierto','En Proceso')")
+)['n'];
 ```
 
-**KPIs estadísticos en tiempo real (`panel_pmo.php`):**
-Cuatro consultas SQL `COUNT(*)` independientes calculan los indicadores clave en cada carga de página, garantizando datos siempre actualizados sin necesidad de caché.
-
-```php
-$kpi_total    = mysqli_fetch_assoc(mysqli_query($conexion,
-    "SELECT COUNT(*) AS total FROM tickets"))['total'];
-$kpi_activos  = mysqli_fetch_assoc(mysqli_query($conexion,
-    "SELECT COUNT(*) AS total FROM tickets
-     WHERE estado IN ('Abierto','En Proceso')"))['total'];
-```
+*Figura 10. Fragmento de código del panel_pmo.php para el cálculo de KPIs en tiempo real.*
 
 ---
 
 ## 7. PRUEBAS
 
-Son muchas las pruebas que pueden realizarse en un proyecto para eliminar los posibles errores y garantizar su correcto funcionamiento. Los casos de prueba establecen las condiciones y variables que permitirán determinar si los requisitos establecidos se cumplen o no.
-
-A continuación se detallan los casos de prueba que se han ejecutado para comprobar la correcta construcción del proyecto:
+Son muchas las pruebas que se pueden realizar en un proyecto para eliminar errores y garantizar el correcto funcionamiento. Los casos de prueba establecen las condiciones que permiten determinar si los requisitos se cumplen o no.
 
 ### 7.1 Casos de pruebas
 
+Se han ejecutado los siguientes casos de prueba para verificar los requisitos más importantes:
+
 ---
 
-**CP-01: Inicio de sesión correcto — perfil cliente**
+**CP-01: Inicio de sesión correcto**
 
 | Campo | Detalle |
 |-------|---------|
 | **Identificador** | CP-01 |
-| **Descripción** | Verificar que un cliente puede iniciar sesión con credenciales válidas y es redirigido a su panel privado. |
-| **Condiciones de ejecución** | XAMPP activo (Apache + MySQL). BD `techflow_db` importada con datos semilla. Navegador sin sesión activa. |
+| **Descripción** | El cliente inicia sesión con credenciales válidas y accede a su panel. |
+| **Condiciones** | XAMPP activo. BD importada. Sin sesión previa. |
 | **Entrada** | Email: `cliente@techflow.com` / Contraseña: `password123` |
-| **Resultado esperado** | El sistema valida las credenciales, crea la sesión y redirige a `panel_cliente.php` mostrando el nombre "Juan Gómez". |
-| **Resultado obtenido** | Redirección correcta a `panel_cliente.php`. Nombre y rol visibles en la barra de navegación. |
+| **Resultado esperado** | Redirección a `panel_cliente.php` con nombre del usuario en la barra de navegación. |
+| **Resultado obtenido** | Correcto. |
 | **Evaluación** | ✅ SUPERADO |
 
 ---
 
-**CP-02: Inicio de sesión correcto — perfil PMO**
+**CP-02: Rechazo de credenciales incorrectas**
 
 | Campo | Detalle |
 |-------|---------|
 | **Identificador** | CP-02 |
-| **Descripción** | Verificar que la gestora PMO accede al cuadro de mando administrativo. |
-| **Condiciones de ejecución** | Ídem CP-01. |
-| **Entrada** | Email: `pmo@techflow.com` / Contraseña: `password123` |
-| **Resultado esperado** | Redirección a `panel_pmo.php` con los 4 KPIs estadísticos y la tabla global de tickets. |
-| **Resultado obtenido** | Correcto. KPIs: 3 incidencias totales, 2 activas, 1 resuelta, 2 proyectos activos. |
+| **Descripción** | El sistema rechaza una contraseña inválida sin exponer información. |
+| **Condiciones** | Ídem CP-01. |
+| **Entrada** | Email correcto / Contraseña incorrecta |
+| **Resultado esperado** | Mensaje de error. Sin redirección. Sin crear sesión. |
+| **Resultado obtenido** | Correcto. |
 | **Evaluación** | ✅ SUPERADO |
 
 ---
 
-**CP-03: Rechazo de credenciales incorrectas**
+**CP-03: Acceso sin sesión activa**
 
 | Campo | Detalle |
 |-------|---------|
 | **Identificador** | CP-03 |
-| **Descripción** | Verificar que el sistema rechaza una contraseña inválida mostrando un error apropiado. |
-| **Condiciones de ejecución** | Ídem CP-01. |
-| **Entrada** | Email: `cliente@techflow.com` / Contraseña: `contraseña_incorrecta` |
-| **Resultado esperado** | Mensaje de error "La contraseña introducida es incorrecta." Sin redirección. Sin crear sesión. |
-| **Resultado obtenido** | Mensaje de error mostrado correctamente. No hay sesión creada. |
+| **Descripción** | El acceso directo a una página privada sin sesión redirige al login. |
+| **Condiciones** | Navegador en ventana de incógnito. |
+| **Entrada** | URL directa: `http://localhost/techflowsolution/panel_pmo.php` |
+| **Resultado esperado** | Redirección automática a `login.php`. |
+| **Resultado obtenido** | Correcto. |
 | **Evaluación** | ✅ SUPERADO |
 
 ---
 
-**CP-04: Protección de recursos privados sin sesión**
+**CP-04: Creación de un nuevo ticket**
 
 | Campo | Detalle |
 |-------|---------|
 | **Identificador** | CP-04 |
-| **Descripción** | Verificar que el acceso directo por URL a páginas privadas sin sesión redirige al login. |
-| **Condiciones de ejecución** | Navegador en ventana de incógnito (sin sesión activa). |
-| **Entrada** | URL directa: `http://localhost/techflowsolution/panel_pmo.php` |
-| **Resultado esperado** | Redirección automática a `login.php`. La página privada no se muestra en ningún momento. |
-| **Resultado obtenido** | Redirección inmediata al login. El contenido privado no queda expuesto. |
+| **Descripción** | El cliente crea una incidencia y queda registrada en la BD. |
+| **Condiciones** | Sesión activa como cliente. |
+| **Entrada** | Título, categoría, gravedad y descripción del ticket. |
+| **Resultado esperado** | El ticket aparece en el panel del cliente y en el buzón del personal. |
+| **Resultado obtenido** | Correcto. |
 | **Evaluación** | ✅ SUPERADO |
 
 ---
 
-**CP-05: Creación de un nuevo ticket de incidencia**
+**CP-05: Asignación de técnico y cambio de estado**
 
 | Campo | Detalle |
 |-------|---------|
 | **Identificador** | CP-05 |
-| **Descripción** | Verificar que un cliente puede crear un ticket y queda registrado en la BD. |
-| **Condiciones de ejecución** | Sesión activa como `cliente@techflow.com`. |
-| **Entrada** | Título: "Fallo VPN preproducción" / Categoría: Infraestructura / Gravedad: Alta / Descripción: "Error Timeout al conectar OpenVPN" |
-| **Resultado esperado** | Se ejecuta `INSERT INTO tickets`. Confirmación en pantalla con ID asignado. El ticket aparece en el panel del cliente con estado "Abierto". |
-| **Resultado obtenido** | Ticket creado con ID #3. Visible en el panel del cliente y en el buzón del personal. |
+| **Descripción** | El personal asigna un técnico y cambia el estado del ticket. |
+| **Condiciones** | Sesión activa como técnico. Ticket en estado "Abierto". |
+| **Entrada** | Selección de técnico + estado "En Proceso" → Guardar. |
+| **Resultado esperado** | El ticket queda actualizado. El KPI "Activos" se incrementa. |
+| **Resultado obtenido** | Correcto. |
 | **Evaluación** | ✅ SUPERADO |
 
 ---
 
-**CP-06: Asignación de técnico y cambio de estado**
+**CP-06: Diseño responsive en móvil**
 
 | Campo | Detalle |
 |-------|---------|
 | **Identificador** | CP-06 |
-| **Descripción** | Verificar que el personal puede asignar un técnico y cambiar el estado de un ticket. |
-| **Condiciones de ejecución** | Sesión activa como `tecnico@techflow.com`. Ticket #3 en estado "Abierto". |
-| **Entrada** | Técnico: "Carlos Técnico" / Estado: "En Proceso" → Botón "Guardar Cambios" |
-| **Resultado esperado** | Se ejecuta `UPDATE tickets`. El ticket #3 queda "En Proceso" con técnico asignado. Cambio visible en el cuadro de mando y en el panel del cliente. |
-| **Resultado obtenido** | Correcto. El KPI "Pendientes/Activos" se incrementa en el panel PMO. |
+| **Descripción** | La interfaz se adapta correctamente a resolución de móvil (375px). |
+| **Condiciones** | Chrome DevTools → iPhone SE (375px). |
+| **Entrada** | Navegación completa por todas las páginas. |
+| **Resultado esperado** | Menú hamburguesa, tarjetas apiladas, sin scroll horizontal. |
+| **Resultado obtenido** | Correcto. Bootstrap 5 adapta el layout en todas las vistas. |
 | **Evaluación** | ✅ SUPERADO |
 
 ---
 
-**CP-07: Protección IDOR — acceso cruzado entre clientes**
-
-| Campo | Detalle |
-|-------|---------|
-| **Identificador** | CP-07 |
-| **Descripción** | Verificar que un cliente no puede acceder a los tickets de otro usuario manipulando la URL. |
-| **Condiciones de ejecución** | Sesión activa como `cliente@techflow.com` (ID = 1). |
-| **Entrada** | URL manipulada: `http://localhost/techflowsolution/ver_ticket.php?id=99` |
-| **Resultado esperado** | El sistema detecta que `tickets.cliente_id ≠ $_SESSION['usuario_id']` y redirige a `panel_cliente.php`. El recurso ajeno no se muestra. |
-| **Resultado obtenido** | Redirección inmediata al panel del cliente. |
-| **Evaluación** | ✅ SUPERADO |
-
----
-
-**CP-08: Diseño responsive en dispositivo móvil**
-
-| Campo | Detalle |
-|-------|---------|
-| **Identificador** | CP-08 |
-| **Descripción** | Verificar que el diseño se adapta correctamente en resolución de móvil (375px). |
-| **Condiciones de ejecución** | Chrome DevTools (F12) → Modo responsive → iPhone SE (375px). |
-| **Entrada** | Navegación completa por `index.php`, `login.php`, `panel_cliente.php` y `panel_pmo.php`. |
-| **Resultado esperado** | Menú colapsado en hamburguesa, tablas con scroll horizontal, tarjetas apiladas verticalmente. Sin desbordamiento. |
-| **Resultado obtenido** | Bootstrap 5 adapta el layout correctamente en todas las vistas. |
-| **Evaluación** | ✅ SUPERADO |
-
----
-
-**Resumen de resultados:**
+**Resumen de pruebas:**
 
 | ID | Caso de prueba | Evaluación |
 |----|---------------|:----------:|
-| CP-01 | Login cliente → panel_cliente.php | ✅ SUPERADO |
-| CP-02 | Login PMO → panel_pmo.php | ✅ SUPERADO |
-| CP-03 | Rechazo contraseña incorrecta | ✅ SUPERADO |
-| CP-04 | Protección sin sesión activa | ✅ SUPERADO |
-| CP-05 | Creación de nuevo ticket | ✅ SUPERADO |
-| CP-06 | Asignación técnico + cambio estado | ✅ SUPERADO |
-| CP-07 | Protección IDOR | ✅ SUPERADO |
-| CP-08 | Diseño responsive en móvil | ✅ SUPERADO |
+| CP-01 | Login con credenciales válidas | ✅ SUPERADO |
+| CP-02 | Rechazo de contraseña incorrecta | ✅ SUPERADO |
+| CP-03 | Protección sin sesión activa | ✅ SUPERADO |
+| CP-04 | Creación de nuevo ticket | ✅ SUPERADO |
+| CP-05 | Asignación técnico + cambio estado | ✅ SUPERADO |
+| CP-06 | Diseño responsive en móvil | ✅ SUPERADO |
 
-**8/8 casos de prueba superados (100% de éxito)**
+*Tabla 13. Resumen de los casos de prueba ejecutados. 6/6 superados.*
 
-A continuación se facilita la plantilla para reportar errores detectados durante las pruebas:
+**Plantilla para errores detectados durante la prueba final:**
 
-| Fecha/autora | Caso de prueba | Evaluación | Posible causa del error | Posible corrección | Áreas afectadas |
+| Fecha / autora | Caso de prueba | Evaluación | Posible causa | Corrección aplicada | Áreas afectadas |
 |---|---|---|---|---|---|
-| 27/05/2026 — Shannon | CP-XX | No superado | [Describir la causa] | [Describir la corrección] | [Archivos afectados] |
+| | | | | | |
 
-*(Tabla completada si se detectan errores durante la prueba final del tribunal)*
+*Tabla 14. Registro de incidencias detectadas en las pruebas. Completar si se detecta algún error.*
 
 ---
 
 ## 8. EXPLOTACIÓN
 
-La implantación es la fase más crítica del proyecto, ya que el sistema entra en producción, es decir, opera en un entorno real con usuarios reales.
+La implantación es la fase más crítica del proyecto, ya que el sistema entra en producción operando con usuarios y datos reales.
 
 ### 8.1 Planificación
 
-| Nº | Tarea | Responsable | Recursos | Tiempo | Riesgo |
-|----|-------|------------|----------|--------|--------|
-| 1 | Instalación de XAMPP en el servidor de destino | Técnico IT | Servidor + instalador XAMPP | 1 h | Bajo |
-| 2 | Copia de archivos PHP al directorio `htdocs` | Técnico IT | Acceso al servidor + proyecto | 30 min | Bajo |
-| 3 | Creación de la BD e importación del SQL | Técnico IT | phpMyAdmin + `database.sql` | 30 min | Medio |
-| 4 | Verificación de `conexion.php` | Técnico IT | Editor de texto | 15 min | Bajo |
-| 5 | Prueba de acceso y validación funcional | Técnico IT + PMO | Navegador | 1 h | Bajo |
-| 6 | Formación a los usuarios del sistema | PMO | Manual de usuario | 2 h | Bajo |
+| Nº | Tarea | Responsable | Tiempo | Riesgo |
+|----|-------|------------|:------:|:------:|
+| 1 | Instalación de XAMPP en el servidor de destino | Técnico IT | 1 h | Bajo |
+| 2 | Copia de archivos PHP al directorio htdocs | Técnico IT | 30 min | Bajo |
+| 3 | Creación de la BD e importación del SQL | Técnico IT | 30 min | Medio |
+| 4 | Verificación de conexion.php | Técnico IT | 15 min | Bajo |
+| 5 | Prueba de acceso y validación funcional | Técnico + PMO | 1 h | Bajo |
+| 6 | Formación a los usuarios del sistema | PMO | 2 h | Bajo |
 
-**Identificación de riesgos:**
+*Tabla 15. Planificación de la implantación.*
 
-- **Puerto 80 ocupado:** Otro servicio (IIS, Skype, Teams) puede estar usando el puerto 80. Solución: cambiar `Listen 80` por `Listen 8080` en `httpd.conf` de Apache.
-- **Credenciales de BD incorrectas:** Si el servidor destino usa otra contraseña para MySQL, editar `conexion.php` antes del despliegue.
+**Riesgos identificados:**
+- **Puerto 80 ocupado** por otro servicio (IIS, Teams): cambiar `Listen 80` por `Listen 8080` en `httpd.conf`.
+- **Credenciales de BD incorrectas en destino:** editar `conexion.php` antes del despliegue.
 
 ### 8.2 Preparación para el cambio
 
-Considerar las necesidades de permisos y autorizaciones para llevar a cabo las actividades:
+Para la implantación hay que tener en cuenta:
 
-- El técnico necesita **acceso de administrador** al servidor para instalar XAMPP y modificar la configuración de Apache.
-- Se deben tener en cuenta las posibles **reticencias al cambio** por parte de los usuarios acostumbrados al correo electrónico. Se debe comunicar con antelación la fecha de puesta en marcha y los beneficios del nuevo sistema.
+- El técnico necesita **acceso de administrador** al servidor para instalar XAMPP.
+- Se deben comunicar con antelación los cambios al equipo, explicando los beneficios respecto al sistema de correo electrónico actual.
 - Antes de la implantación se realizará un **backup** del sistema anterior (hojas de cálculo y correos archivados).
 
 ### 8.3 Plan de formación
 
-Definición de la documentación necesaria para la formación de los usuarios del sistema (incluida como Anexo 12.1 — Manual de usuario):
-
 | Perfil | Contenido | Duración |
-|--------|-----------|----------|
-| **Clientes** | Acceso al portal, visualización de proyectos, creación y seguimiento de tickets | 45 min |
-| **Técnicos** | Gestión del buzón, asignación, cambio de estados, respuesta a clientes | 60 min |
-| **PMO** | Supervisión del cuadro de mando, KPIs, cartera de proyectos | 60 min |
+|--------|-----------|:--------:|
+| **Clientes** | Acceso, proyectos, creación y seguimiento de tickets | 45 min |
+| **Técnicos** | Gestión del buzón, asignación, estados, chat | 60 min |
+| **PMO** | Cuadro de mando, KPIs, cartera de proyectos | 60 min |
+
+*Tabla 16. Plan de formación por perfil de usuario. Documentación disponible en el Anexo 12.1.*
 
 ### 8.4 Implantación propiamente dicha
 
-Demostración de que el sistema está implantado y en producción:
+**Paso 1 — Servidor:** instalar XAMPP 8.2 y arrancar Apache y MySQL desde el Panel de Control.
 
-**Paso 1 — Servidor:** Instalar XAMPP 8.2. Verificar que Apache y MySQL muestran fondo verde en el Panel de Control de XAMPP.
-
-**Paso 2 — Aplicación:** Copiar todos los archivos PHP, el script `database.sql` y la carpeta `imagenes-tfg/` en `C:\xampp\htdocs\techflowsolution\`.
+**Paso 2 — Aplicación:** copiar todos los archivos del proyecto en `C:\xampp\htdocs\techflowsolution\`.
 
 **Paso 3 — Base de datos:**
 1. Acceder a `http://localhost/phpmyadmin/`
 2. Crear la base de datos `techflow_db` con collation `utf8mb4_unicode_ci`
 3. Importar `database.sql` desde la pestaña "Importar"
 
-**Paso 4 — Verificación:** Acceder a `http://localhost/techflowsolution/index.php` y comprobar que carga correctamente sin errores PHP.
+**Paso 4 — Verificación:** acceder a `http://localhost/techflowsolution/index.php` y comprobar que carga correctamente.
 
 ### 8.5 Pruebas de implantación
 
-Realización de las pruebas del sistema ya implantado en el entorno de destino:
+| Prueba | Estado |
+|--------|:------:|
+| Página index carga sin errores PHP | ✅ OK |
+| Login funciona con los 3 perfiles | ✅ OK |
+| Ticket creado por cliente visible en panel PMO | ✅ OK |
+| Diseño responsive en móvil | ✅ OK |
+| Log de Apache sin errores nuevos | ✅ OK |
 
-| Prueba | Verificación | Estado |
-|--------|-------------|:------:|
-| Página index carga sin errores PHP | Sin mensajes de error en pantalla | ✅ OK |
-| Login funciona con los 3 perfiles | Cada usuario accede a su panel correcto | ✅ OK |
-| Ticket creado por cliente visible en panel PMO | Sin necesidad de recargar manualmente | ✅ OK |
-| Diseño responsive en móvil | Sin scroll horizontal no deseado | ✅ OK |
-| Log de Apache sin errores | `C:\xampp\apache\logs\error.log` limpio | ✅ OK |
+*Tabla 17. Resultados de las pruebas de implantación en el entorno de destino.*
 
 ---
 
 ## 9. DEFINICIÓN DE PROCEDIMIENTOS DE CONTROL Y EVALUACIÓN
 
-A lo largo del ciclo de vida del proyecto se producirán cambios e incidencias que deberán controlarse y registrarse.
-
 **Registro de incidencias detectadas durante el desarrollo:**
 
-| Fecha | ID incidencia | Descripción | Posible causa | Corrección aplicada | Áreas afectadas |
-|-------|--------------|-------------|---------------|---------------------|-----------------|
-| 27/05/2026 | INC-01 | Caracteres con tilde (á, ñ) se muestran como símbolos extraños en la BD | Falta de configuración de charset UTF-8 en la conexión | Se añadió `mysqli_set_charset($conexion, "utf8mb4")` en `conexion.php` | `conexion.php`, todas las vistas PHP |
-| 27/05/2026 | INC-02 | El panel PMO era accesible sin autenticación mediante URL directa | Ausencia del bloque de control de sesión al inicio de `panel_pmo.php` | Se añadió `if (!isset($_SESSION['usuario_id'])) { header("Location: login.php"); exit; }` | `panel_pmo.php`, `panel_cliente.php` |
-| 27/05/2026 | INC-03 | Un cliente podía ver tickets de otro usuario cambiando el parámetro `?id=` en la URL | No se verificaba si el ticket pertenecía al cliente de la sesión activa | Se implementó la comprobación cruzada `cliente_id` vs `$_SESSION['usuario_id']` | `ver_ticket.php` |
+| Fecha | ID | Descripción | Causa | Corrección | Áreas afectadas |
+|-------|----|-------------|-------|------------|-----------------|
+| 27/05/2026 | INC-01 | Tildes y eñes aparecen como símbolos extraños | Falta de charset UTF-8 en la conexión | Se añadió `mysqli_set_charset($conexion, "utf8mb4")` | `conexion.php` |
+| 27/05/2026 | INC-02 | El panel PMO era accesible sin autenticación por URL directa | Falta del control de sesión al inicio del script | Se añadió comprobación de `$_SESSION` con redirección al login | `panel_pmo.php`, `panel_cliente.php` |
 
-**Plantilla para gestión de cambios en el proyecto:**
+*Tabla 18. Registro de incidencias detectadas y resueltas durante el desarrollo.*
 
-| Fecha | Cambio realizado | Justificación | Áreas afectadas |
-|-------|-----------------|---------------|-----------------|
-| 26/05/2026 | Adición del campo `updated_at` en la tabla `tickets` | Registrar la fecha de última actualización para el histórico de KPIs | `database.sql`, `panel_pmo.php` |
-| 27/05/2026 | Creación de la carpeta `imagenes-tfg/` con capturas reales | Requisito de la documentación técnica del departamento IFC | `memoria_proyecto.md` |
+**Registro de cambios en el proyecto:**
+
+| Fecha | Cambio | Justificación | Áreas afectadas |
+|-------|--------|---------------|-----------------|
+| 26/05/2026 | Adición del campo `updated_at` en tickets | Registrar la última modificación para los KPIs | `database.sql`, `panel_pmo.php` |
+| 27/05/2026 | Creación de carpeta `imagenes-tfg/` | Requisito de documentación técnica IFC | Documentación |
+
+*Tabla 19. Registro de cambios realizados durante el proyecto.*
 
 ---
 
 ## 10. CONCLUSIONES
 
-El proyecto **TechFlow Solutions** ha sido completado satisfactoriamente, cumpliendo el 100% de los objetivos técnicos y académicos establecidos al inicio. Los 8 casos de prueba definidos han sido superados al 100%, validando tanto la funcionalidad del sistema como su seguridad y usabilidad.
+El proyecto **TechFlow Solutions** se ha completado satisfactoriamente, cumpliendo los objetivos técnicos y académicos establecidos. Los 6 casos de prueba definidos han sido superados al 100%, validando la funcionalidad, seguridad y usabilidad del sistema.
 
-El desarrollo integral de esta plataforma ha supuesto una simulación fidedigna de los desafíos técnicos que se presentan en las consultorías informáticas reales, permitiendo aplicar de forma integrada los conocimientos adquiridos durante el ciclo formativo: bases de datos relacionales, desarrollo web en PHP, seguridad informática, redes y administración de sistemas.
+El desarrollo ha supuesto una simulación real de los retos técnicos de una consultoría informática, permitiendo aplicar de forma integrada los conocimientos del ciclo formativo: bases de datos, desarrollo web, seguridad, redes y administración de sistemas.
 
-La modalidad de **FP Dual Intensiva** ha marcado una diferencia cualitativa en la formación. La promoción interna experimentada durante la estancia en empresa —desde Soporte IT Nivel 1 hacia la PMO— ha aportado tanto habilidades técnicas (administración de sistemas, redes, programación web) como habilidades transversales (comunicación con clientes, trabajo en equipo, gestión del tiempo).
+La metodología de trabajo —investigar, aprender y aplicar de forma progresiva— ha resultado muy efectiva. Se consultó documentación oficial (PHP, MySQL, Bootstrap), recursos en línea y tutoriales, e ir construyendo cada módulo a medida que se adquirían los conocimientos necesarios.
 
-**Propuesta de mejoras futuras:**
-- Integración de notificaciones por email con `PHPMailer` cuando un ticket cambie de estado.
-- Módulo de subida de archivos adjuntos a los tickets.
-- Gráficos estadísticos dinámicos con `Chart.js` en el cuadro de mando PMO.
-- Panel de administración de usuarios sin necesidad de acceder a phpMyAdmin.
-- Despliegue en producción con HTTPS mediante Let's Encrypt.
+**Objetivos cumplidos:**
+- Base de datos relacional normalizada en MySQL. ✅
+- Aplicación web funcional en PHP procedimental. ✅
+- Autenticación segura con hash Bcrypt. ✅
+- Interfaz responsive con Bootstrap 5. ✅
+- Cuadro de mando PMO con KPIs en tiempo real. ✅
+- Documentación técnica completa. ✅
+
+**Mejoras futuras posibles:**
+- Notificaciones automáticas por email cuando un ticket cambia de estado.
+- Subida de archivos adjuntos a los tickets.
+- Gráficos estadísticos con Chart.js en el cuadro de mando.
+- Despliegue en servidor de producción con HTTPS.
 
 ---
 
@@ -817,40 +760,39 @@ La modalidad de **FP Dual Intensiva** ha marcado una diferencia cualitativa en l
 
 2. MariaDB Foundation. (2026). *MariaDB Server Documentation*. https://mariadb.com/kb/en/documentation/
 
-3. Bootstrap Team. (2026). *Bootstrap v5.3 — CSS Framework*. https://getbootstrap.com/docs/5.3/
+3. Bootstrap Team. (2026). *Bootstrap v5.3 — Components and Grid System*. https://getbootstrap.com/docs/5.3/
 
-4. OWASP Foundation. (2025). *OWASP Top Ten — A01: Broken Access Control (IDOR)*. https://owasp.org/www-project-top-ten/
+4. OWASP Foundation. (2025). *OWASP Top Ten — Seguridad en aplicaciones web*. https://owasp.org/www-project-top-ten/
 
-5. Apache Software Foundation. (2026). *Apache HTTP Server Documentation*. https://httpd.apache.org/docs/
+5. Apache Friends. (2026). *XAMPP — Documentación para Windows*. https://www.apachefriends.org/es/faq_windows.html
 
-6. Apache Friends. (2026). *XAMPP — Documentación y FAQs para Windows*. https://www.apachefriends.org/es/faq_windows.html
-
-7. American Psychological Association. (2020). *Publication Manual of the APA* (7.ª ed.). https://apastyle.apa.org/
+6. American Psychological Association. (2020). *Publication Manual of the APA* (7.ª ed.). https://apastyle.apa.org/
 
 ---
 
 ## 12. ANEXOS
 
-### 12.1 Guía de estilo — Manual de Usuario
+### 12.1 Manual de usuario
 
-> **Archivo adjunto:** `manual_usuario.md` / `manual_usuario.docx`
+> **Archivo adjunto:** `manual_usuario.docx`
 
-El manual de usuario detalla paso a paso cómo utilizar cada módulo del portal corporativo TechFlow Solutions, con capturas de pantalla reales del sistema. Incluye:
+El manual de usuario detalla paso a paso cómo utilizar cada módulo del portal TechFlow Solutions, con capturas de pantalla reales. Incluye:
 
-- Acceso al portal y credenciales de prueba
-- Guía para el perfil **cliente**: visualización de proyectos, creación de tickets y chat de seguimiento
-- Guía para el perfil **técnico**: gestión del buzón, asignación y cambio de estados
-- Guía para el perfil **PMO**: cuadro de mando, KPIs y cartera de proyectos
-- Resolución de problemas frecuentes
+- Acceso al portal y credenciales de prueba.
+- Guía para el perfil **cliente**: visualización de proyectos, creación de tickets y chat.
+- Guía para el perfil **técnico**: gestión del buzón, asignación y cambio de estados.
+- Guía para el perfil **PMO**: cuadro de mando, KPIs y cartera de proyectos.
 
-**Credenciales de prueba del sistema:**
+**Credenciales de prueba:**
 
 | Perfil | Email | Contraseña |
 |--------|-------|------------|
 | Cliente | cliente@techflow.com | password123 |
 | Técnico | tecnico@techflow.com | password123 |
-| PMO (Gestora) | pmo@techflow.com | password123 |
+| PMO | pmo@techflow.com | password123 |
+
+*Tabla 20. Credenciales de prueba del sistema para la demostración.*
 
 ---
 
-*Memoria del Proyecto Final de Grado Medio SMR · TechFlow Solutions · Mayo 2026 · IFC*
+*Proyecto Final SMR · TechFlow Solutions · Mayo 2026 · IFC*
