@@ -80,9 +80,9 @@ http://localhost/techflowsolution/login.php
 
 **Figura 2: Pantalla de Inicio de Sesión del Portal**
 
-![Figura 2 - Login del portal TechFlow Solutions](imagenes-tfg/portal_login.png)
+![Figura 2 - Login del portal TechFlow Solutions](imagenes-tfg/login.png)
 
-*Figura 2. Formulario de autenticación del portal corporativo (login.php). Muestra el panel administrativo del usuario PMO en la sesión activa.*
+*Figura 2. Formulario de autenticación del portal corporativo (login.php).*
 
 ### Pasos para iniciar sesión:
 
@@ -144,6 +144,12 @@ Cuando el cliente detecta un problema técnico o necesita soporte, debe crear un
 1. En el menú de navegación, hacer clic en **"Área de Soporte"** o bien en el botón **"Crear Nueva Incidencia"** desde el panel de cliente.
 2. El sistema carga el formulario en `crear_ticket.php`.
 
+**Figura 4: Formulario de Nueva Incidencia**
+
+![Figura 4 - Formulario de nueva incidencia](imagenes-tfg/cliente_reportar_incidencia_it.png)
+
+*Figura 4. Formulario para el reporte de nuevas incidencias de soporte técnico desde el perfil del cliente.*
+
 ### Campos del formulario de alta de incidencia:
 
 | Campo | Tipo | Descripción |
@@ -164,11 +170,11 @@ Cuando el cliente detecta un problema técnico o necesita soporte, debe crear un
 
 El personal de la consultora (técnicos y gestoras PMO) accede a un panel administrativo unificado.
 
-**Figura 4: Cuadro de Mando Administrativo del Personal TechFlow**
+**Figura 5: Cuadro de Mando Administrativo del Personal TechFlow**
 
-![Figura 4 - Cuadro de mando PMO con KPIs y tabla de tickets](imagenes-tfg/cuadro_mando_pmo.png)
+![Figura 5 - Cuadro de mando PMO con KPIs y tabla de tickets](imagenes-tfg/cuadro_mando_pmo.png)
 
-*Figura 4. Panel de control del personal (panel_pmo.php). Muestra los KPIs estadísticos en la cabecera y la tabla de gestión global de tickets. Se observan los tickets #1, #2 y #3 con sus respectivos estados: "En Proceso", "Abierto" y "Resuelto".*
+*Figura 5. Panel de control del personal (panel_pmo.php). Muestra los KPIs estadísticos en la cabecera y la tabla de gestión global de tickets. Se observan los tickets #1, #2 y #3 con sus respectivos estados: "En Proceso", "Abierto" y "Resuelto".*
 
 ### Cabecera de KPIs (Indicadores Clave de Rendimiento)
 
@@ -203,6 +209,12 @@ Tabla con todos los proyectos de la cartera de clientes activos, con su porcenta
 Al hacer clic en el botón **"Gestionar"** desde el panel PMO, o en **"Ver Detalle"** desde el panel cliente, se abre la vista completa del ticket en `ver_ticket.php`.
 
 Esta vista tiene dos zonas:
+
+**Figura 6: Historial y Gestión de Incidencias**
+
+![Figura 6 - Historial y chat de seguimiento](imagenes-tfg/historial_y_gestion_incidencias.png)
+
+*Figura 6. Historial del ticket y chat de seguimiento. Los técnicos pueden actualizar el estado de la incidencia en tiempo real.*
 
 ### Zona Izquierda: Chat de Seguimiento
 
