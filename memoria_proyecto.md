@@ -137,7 +137,7 @@ Nace así el nuevo proyecto denominado **TechFlow Solutions — Portal de Gesti�
 
 Se identifican las tareas del proyecto y se estima el tiempo necesario. El proyecto es desarrollado por **1 persona** en **3 días de trabajo intensivo**.
 
-> 📷 **[Insertar aquí la imagen del diagrama de Gantt]**
+![Figura 1 - Diagrama de Gantt del proyecto](digramas-imagenes/diagrama-gantt.png)
 
 *Figura 1. Diagrama de Gantt del proyecto TechFlow Solutions. Las tres fases muestran la distribución de tareas a lo largo de los 3 días de desarrollo.*
 
@@ -272,7 +272,7 @@ techflowsolution/
 
 El sistema se implementa sobre una arquitectura **cliente-servidor de tres capas** en red local:
 
-> 📷 **[Insertar aquí la imagen de la arquitectura de red]**
+![Figura 5 - Arquitectura de red](digramas-imagenes/Arquitectura-de-red (1).png)
 
 *Figura 5. Arquitectura cliente-servidor de tres capas del sistema TechFlow Solutions. URL de acceso local: `http://localhost/techflowsolution/`*
 
@@ -412,19 +412,19 @@ A continuación se muestran capturas que demuestran que el sistema está correct
 
 ---
 
-> 📷 **[Insertar captura de index.php — página pública]**
+![Figura 7 - Página corporativa pública](imagenes-tfg/inicio_corporativo.png)
 >
 > *Figura 7. Página corporativa pública desplegada en el servidor Apache local. La URL `localhost/techflowsolution/` confirma que el servidor sirve correctamente los archivos PHP.*
 
 ---
 
-> 📷 **[Insertar captura de panel_cliente.php]**
+![Figura 8 - Panel privado del cliente](imagenes-tfg/panel_cliente.png)
 >
 > *Figura 8. Panel privado del cliente con proyectos y tickets recuperados en tiempo real desde MySQL. Confirma que la conexión MySQLi a techflow_db funciona correctamente.*
 
 ---
 
-> 📷 **[Insertar captura de panel_pmo.php]**
+![Figura 9 - Cuadro de mando del personal](imagenes-tfg/cuadro_mando_pmo.png)
 >
 > *Figura 9. Cuadro de mando del personal PMO con los 4 indicadores KPI calculados en tiempo real mediante consultas SQL.*
 
@@ -440,7 +440,7 @@ A continuación se comentan los aspectos más significativos:
 
 Las contraseñas nunca se almacenan en texto plano. Se utiliza el algoritmo **Bcrypt**, que transforma la contraseña en un hash unidireccional. La verificación se realiza con la función `password_verify()` de PHP:
 
-> 📷 **[Insertar aquí la imagen del esquema de autenticación]**
+![Figura 10 - Esquema de autenticación](digramas-imagenes/autenticacion (1).png)
 
 *Figura 10. Proceso de autenticación con verificación de hash Bcrypt.*
 
@@ -698,7 +698,9 @@ La metodología de investigar, aprender y aplicar de forma progresiva ha resulta
 3. Bootstrap Team. (2026). *Bootstrap v5.3 — Components and Grid*. https://getbootstrap.com/docs/5.3/
 4. OWASP Foundation. (2025). *OWASP Top Ten — Seguridad en aplicaciones web*. https://owasp.org/www-project-top-ten/
 5. Apache Friends. (2026). *XAMPP — Documentación para Windows*. https://www.apachefriends.org/es/
-6. American Psychological Association. (2020). *Publication Manual of the APA* (7.ª ed.). https://apastyle.apa.org/
+6. Mermaid.js. (2026). *Mermaid — Diagramming and charting tool*. https://mermaid.js.org/
+7. ToDiagram. (2026). *ToDiagram — Online Diagram Editor*. https://todiagram.com/
+8. American Psychological Association. (2020). *Publication Manual of the APA* (7.ª ed.). https://apastyle.apa.org/
 
 ---
 
