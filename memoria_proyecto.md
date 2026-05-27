@@ -260,9 +260,9 @@ techflowsolution/
 
 *Tabla 4. Tablas de la base de datos techflow_db.*
 
-![Figura 4 - Diagrama de relaciones de la BD techflow_db en phpMyAdmin](imagenes-tfg/diagrama_bd_phpmyadmin.png)
+![Figura 4 - Diagrama Entidad-Relación de techflow_db (Mermaid)](digramas-imagenes/mermaid-diagram-mode.png)
 
-*Figura 4. Diagrama de relaciones de techflow_db generado con phpMyAdmin. Se observan las 4 tablas InnoDB con sus campos y las relaciones: usuarios → proyectos (1:N), usuarios → tickets (1:N × 2) y tickets → comentarios_tickets (1:N).*
+*Figura 4. Diagrama Entidad-Relación de techflow_db generado con Mermaid. Se observan las 4 tablas InnoDB con sus campos, claves primarias/foráneas y las relaciones: usuarios → proyectos (1:N), usuarios → tickets (1:N × 2) y tickets → comentarios_tickets (1:N).*
 
 **Servidor web:** Apache (XAMPP), que interpreta los scripts PHP y sirve el HTML generado al navegador.
 
@@ -430,6 +430,24 @@ A continuación se muestran capturas que demuestran que el sistema está correct
 
 ---
 
+![Figura 10 - Portal de acceso](imagenes-tfg/login.png)
+>
+> *Figura 10. Portal de acceso (login.php) con control de sesiones y redirección según rol.*
+
+---
+
+![Figura 11 - Formulario de nueva incidencia](imagenes-tfg/cliente_reportar_incidencia_it.png)
+>
+> *Figura 11. Formulario para el reporte de nuevas incidencias de soporte técnico desde el perfil del cliente (crear_ticket.php).*
+
+---
+
+![Figura 12 - Historial y chat de seguimiento](imagenes-tfg/historial_y_gestion_incidencias.png)
+>
+> *Figura 12. Historial del ticket y chat de seguimiento. Los técnicos pueden actualizar el estado de la incidencia en tiempo real (ver_ticket.php).*
+
+---
+
 ### 6.6 Implementaciones de código realizadas
 
 El código fuente completo y comentado se entrega en formato electrónico en el repositorio GitHub del proyecto: `https://github.com/alicenon/techflow`
@@ -440,9 +458,9 @@ A continuación se comentan los aspectos más significativos:
 
 Las contraseñas nunca se almacenan en texto plano. Se utiliza el algoritmo **Bcrypt**, que transforma la contraseña en un hash unidireccional. La verificación se realiza con la función `password_verify()` de PHP:
 
-![Figura 10 - Esquema de autenticación](digramas-imagenes/autenticacion (1).png)
+![Figura 13 - Esquema de autenticación](digramas-imagenes/autenticacion (1).png)
 
-*Figura 10. Proceso de autenticación con verificación de hash Bcrypt.*
+*Figura 13. Proceso de autenticación con verificación de hash Bcrypt.*
 
 Si se intenta acceder directamente a una URL privada sin sesión activa, el sistema redirige automáticamente al formulario de login.
 
@@ -464,7 +482,7 @@ $activas = mysqli_fetch_assoc(
 )['n'];
 ```
 
-*Figura 11. Fragmento del panel_pmo.php para el cálculo de KPIs en tiempo real.*
+*Figura 14. Fragmento del panel_pmo.php para el cálculo de KPIs en tiempo real.*
 
 ---
 
