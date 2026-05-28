@@ -2,6 +2,8 @@
 
 ## Código Mermaid (para pegar en cualquier editor compatible)
 
+### PIDELE A CHATGPT QUE TE CAMBIE LAS FECHAS O SI QUIERES ESPECIFICAR, QUE CUESTA UN POCO MODIFICAR LAS FECHAS A MANO. ES MUY IMPORTANTE QUE NO TE LO BORRE
+
 Pegar en: https://mermaid.live · todiagram.com · o el plugin Mermaid de VS Code
 
 ```mermaid
